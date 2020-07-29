@@ -5,7 +5,6 @@ const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('lds-roller')
 
-
 // Show Loading
 function loading() {
     loader.hidden = false;
@@ -43,10 +42,10 @@ async function getQuote() {
         }
         quoteText.innerText = data.quoteText;
         // stop loader and show quote
-        complete();
+        complete()
         
     } catch (error) {
-        getQuote();  
+        // getQuote();  
     }
 }
 
